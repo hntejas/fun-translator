@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root{
+    --google-blue: #4285f4;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav */
+
+nav {
+    background-color: var(--google-blue);
+    color: white;
+    text-align: center;
+}
+
+/* container */
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+header{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+}
+
+.lang-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #dfe1e5;
+    border-radius: 5px 5px 0 0;
+    padding: 0.5rem;
+    background: var(--google-blue);
+    color: white;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dfe1e5;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.input-area{
+    flex: 50%;
+    height: 40vh;
+}
+
+.input-area textarea{
+    width: 90%;
+    height: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    border: none;
+    resize: none;
+    padding: 0.8rem;
+}
+
+.input-area textarea:focus{
+    outline: none;
+}
+
+.output-area {
+    border-left: 1px solid #dfe1e5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: gray;
+    flex: 50%;
+    min-height: 250px;
+    overflow: scroll;
+    width: 50%;
+}
+
+.output-area::-webkit-scrollbar {
+    display: none;
+}
+
+
+select{
+    border: none;
+    font-size: 1rem;
+    font-weight: 550;    
+    border: none;
+    background: inherit;
+    color: white;
+}
+
+option{
+    color: black;
+    border: none;
+    background-color:white;
+}
+
+option:active{    
+    background: none;
+}
+
+select:focus{
+    outline: none;
+}
+
+.btn-translate{
+    display: block;
+    margin: auto;
+    width: max-content;
+    background: var(--google-blue);
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-translate:disabled{
+    background-color: gray;
+}
+
+.btn-translate:focus{
+    outline: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 7rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .text-area{
+        flex-direction: column;
+    }
+    .output-area, .input-area {   
+      width: auto;
+      flex: 100%;
+    }
+    .output-area{
+        border-top: 1px solid #dfe1e5;
+    }
+    .container{
+        margin: 1rem auto
+    }
+}

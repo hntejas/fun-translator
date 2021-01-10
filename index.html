@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Speak Morse</title>
+  </head>
+  <body>
+    <header>
+      <h1>Fun Google Translator</h1>
+    </header>
+    <div class="container">
+      <div class="lang-header">
+        <b> English </b>
+        <select id="translate-lang">
+          <option value="morse">Morse</option>
+          <option value="emoji">Emoji</option>
+          <option value="dothraki">Dortharaki</option>
+          <option value="yoda">Yoda</option>
+          <option value="pirate">Pirate</option>
+        </select>
+      </div>
+      <div class="text-area">
+        <div class="input-area">
+          <textarea id="textarea-input" placeholder="Enter Here"></textarea>
+        </div>
+        <div class="output-area">
+          <div style="padding: 1rem">
+            <span id="area-output">Translation</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn-translate" id="button-translate">Translate</button>
+      </div>
+    </div>
+    <footer>
+      <p>Like to try out some fun translation?</p>
+      <p>
+        You are in the right place!! don't miss to try out all the available
+        translations
+      </p>
+      <p>
+        As I'm using public servers, there are some limitation on number of requests I can send. Pardon me if
+        you don't enjoy the best experience
+      </p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
