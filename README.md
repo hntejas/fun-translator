@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://404-page-not-found-challanges-io.netlify.app">
+    <a href="https://fun-translator-google-design.netlify.app">
       Demo
     </a>   
   </h3>
